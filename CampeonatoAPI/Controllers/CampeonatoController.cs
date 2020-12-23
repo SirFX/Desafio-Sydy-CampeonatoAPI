@@ -26,6 +26,10 @@ namespace CampeonatoAPI.Controllers
         }
         // GET: CampeonatoController
 
+        /// <summary>
+        /// Gerar campeonato 'Brasileirão'
+        /// </summary>
+        /// <response code = "200">Campeonato obtido com sucesso!</response>
         [HttpGet]
         public async Task<IActionResult> GetCampeonato()
         {
@@ -51,7 +55,10 @@ namespace CampeonatoAPI.Controllers
             }
         }
 
-
+        /// <summary>
+        /// Gerar campeonato com nome personalisado
+        /// </summary>
+        /// <response code = "200">Campeonato obtido com sucesso!</response>
         [HttpGet]
         [Route("{nomeCampeonato}", Name = "GetCampeonato")]
         public async Task<IActionResult> GetCampeonato(string nomeCampeonato)

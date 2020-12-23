@@ -25,6 +25,10 @@ namespace CampeonatoAPI.Controllers
             _mapper = mapper;
         }
         // GET: TimesController
+        /// <summary>
+        /// Obter Times com paginação 
+        /// </summary>
+        /// <response code = "200">Times obtidos com sucesso!</response>
         [HttpGet]
         public async Task<IActionResult> GetTimes([FromQuery] ParametersPage pageParameters)
         {
@@ -55,6 +59,11 @@ namespace CampeonatoAPI.Controllers
         }
 
         // GET: TimesController/Details/5
+        // GET: TimesController
+        /// <summary>
+        /// Obter Time especifico
+        /// </summary>
+        /// <response code = "200">Time obtido com sucesso!</response>
         [HttpGet]
         [Route("{id}", Name = "GetTime")]
         public async Task<IActionResult> Get(Guid id)
@@ -72,6 +81,11 @@ namespace CampeonatoAPI.Controllers
         }
 
         // GET: TimesController/Create
+        // GET: TimesController
+        /// <summary>
+        /// Adicionar Time 
+        /// </summary>
+        /// <response code = "200">Times Adicionado com sucesso!</response>
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] TimeEntity time)
         {
@@ -102,6 +116,11 @@ namespace CampeonatoAPI.Controllers
         }
 
         // POST: TimesController/Create
+
+        /// <summary>
+        /// Atualizar Time
+        /// </summary>
+        /// <response code = "200">Time Atualizado com sucesso!</response>
         [HttpPut]
         [Route("{id}")]
         public async Task<IActionResult> Put(Guid id, [FromBody] TimeEntity time)
@@ -134,6 +153,10 @@ namespace CampeonatoAPI.Controllers
 
 
         // GET: TimesController/Delete/5
+        /// <summary>
+        /// Deletar Time 
+        /// </summary>
+        /// <response code = "200">Time Deletado com sucesso!</response>
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(Guid id)
         {

@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CampeonatoAPI</name>
+    </assembly>
+    <members>
+        <member name="M:CampeonatoAPI.Controllers.CampeonatoController.GetCampeonato">
+            <summary>
+            Gerar campeonato 'Brasileirão'
+            </summary>
+            <response code = "200">Campeonato obtido com sucesso!</response>
+        </member>
+        <member name="M:CampeonatoAPI.Controllers.CampeonatoController.GetCampeonato(System.String)">
+            <summary>
+            Gerar campeonato com nome personalisado
+            </summary>
+            <response code = "200">Campeonato obtido com sucesso!</response>
+        </member>
+        <member name="M:CampeonatoAPI.Controllers.TimeController.GetTimes(CampeonatoAPI.Domain.Parameters.ParametersPage)">
+            <summary>
+            Obter Times com paginação 
+            </summary>
+            <response code = "200">Times obtidos com sucesso!</response>
+        </member>
+        <member name="M:CampeonatoAPI.Controllers.TimeController.Get(System.Guid)">
+            <summary>
+            Obter Time especifico
+            </summary>
+            <response code = "200">Time obtido com sucesso!</response>
+        </member>
+        <member name="M:CampeonatoAPI.Controllers.TimeController.Post(CampeonatoAPI.Domain.Entities.TimeEntity)">
+            <summary>
+            Adicionar Time 
+            </summary>
+            <response code = "200">Times Adicionado com sucesso!</response>
+        </member>
+        <member name="M:CampeonatoAPI.Controllers.TimeController.Put(System.Guid,CampeonatoAPI.Domain.Entities.TimeEntity)">
+            <summary>
+            Atualizar Time
+            </summary>
+            <response code = "200">Time Atualizado com sucesso!</response>
+        </member>
+        <member name="M:CampeonatoAPI.Controllers.TimeController.Delete(System.Guid)">
+            <summary>
+            Deletar Time 
+            </summary>
+            <response code = "200">Time Deletado com sucesso!</response>
+        </member>
+    </members>
+</doc>
