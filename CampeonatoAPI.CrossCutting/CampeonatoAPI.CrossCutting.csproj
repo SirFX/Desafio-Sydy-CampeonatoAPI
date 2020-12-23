@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CampeonatoAPI.Data\CampeonatoAPI.Data.csproj" />
+    <ProjectReference Include="..\CampeonatoAPI.Domain\CampeonatoAPI.Domain.csproj" />
+    <ProjectReference Include="..\CampeonatoAPI.Service\CampeonatoAPI.Service.csproj" />
+  </ItemGroup>
+
+</Project>
